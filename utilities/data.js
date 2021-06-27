@@ -29,7 +29,6 @@ exports.generateVolunteers = (dir) => {
     }
   }
 
-  getData()
 
   return finalVolunteers;
 };
@@ -40,7 +39,6 @@ exports.getData = ()=>{
       throw err
     }
     const Out = JSON.parse(data)
-    console.log(Out)
     return Out.data
 
   })
@@ -58,5 +56,18 @@ exports.MessageClient = (target,data, smsMessage) => {
 }
 
 exports.saveUnresolvedMessages = (dataArr)=>{
-  fs.writeFile(__dirname + "/../data/report.json", JSON.stringify(dataArr))
+
+  fs.writeFile(__dirname + "/../data/report.json", JSON.stringify(dataArr), ()=>{
+    // do nothing
+  })
+}
+
+exports.getUnresolvedContacts = ()=>{
+  fs.readFile(__dirname + '/../data/report.json', (err, data)=>{
+    if (err){
+      throw err
+    }
+    return JSON.parse(data)
+
+  })
 }
