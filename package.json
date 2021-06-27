@@ -13,6 +13,7 @@
   "dependencies": {
     "@types/node": "^15.12.4",
     "bluebird": "^3.7.2",
+    "cli-progress": "^3.9.0",
     "clicksend": "^5.0.37",
     "dotenv": "^10.0.0",
     "http": "0.0.1-security",
