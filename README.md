@@ -7,13 +7,20 @@ Utilizes clicksend sms api to perform the actual work.
 
 The tool keeps track of unsuccessfull send message attempts and stores it in  a file. 
 
-# Usage
+# Getting Started
 
-## npm start
+To initialize.
+
+```bash
+npm start
+```
 
 This command will will run the program.
 
-## npm start --resend
+```
+npm start --resend
+```
 
-Any unsuccessfull attempts are stored in record.json file. This command 
+
+Any unsuccessfull attempts are stored in `data/record.json` file. This command 
 will try resending to the contacts on the file
