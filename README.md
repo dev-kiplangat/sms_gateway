@@ -3,7 +3,7 @@
 This is a simple command line tool that i built to allow
 me to easily send bulk messages to clients.
 
-The tool is built around [`clicksend-sms-api`](http://clicksend.com) to perform the actual work. 
+The tool is built around [clicksend-sms-api](http://clicksend.com) to perform the actual work. 
 
 # Getting Started
 
